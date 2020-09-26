@@ -1,0 +1,41 @@
+PROCEDURE dot_product(VAR x,y,a:INTEGER)
+VAR 
+    b : INTEGER;
+BEGIN
+    b:=x*y*COS(a)
+    Write("the scalar of V1 and V2 is: ",b)
+END
+
+
+FUNCTION verif() : BOOLEAN
+VAR
+    wrong : BOOLEAN:=FALSE;
+    x,y : INTEGER;
+BEGIN
+    IF (x>0 AND Y>0) THEN
+        wrong:=TRUE;
+    END_IF
+    RETURN wrong ;
+END
+
+
+ALGORITHM vector
+VAR
+    x,y,a : INTEGER;
+    c : BOOLEAN;
+BEGIN
+    Write("give the lengh of V1")
+    Read(x)
+    Write("give the lengh of V2")
+    Read(y)
+    Write("give the angle between V1 and V2")
+    Read(a)
+    c:=verif(x,y)
+    IF (c=TRUE) THEN
+        dot_product(x,y,a)
+        ELSE
+            Write("please give two integer")
+        END_IF
+    END_IF
+    
+END
